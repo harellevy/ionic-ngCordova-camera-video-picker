@@ -15,7 +15,7 @@ app.use("/node_modules",express.static(__dirname + '/node_modules'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
-app.use(bodyParser.json());
+app.use(bodyParser.json(1));
 
 app.post('/s', function (req, res) {
 	var s3 = new AWS.S3();
