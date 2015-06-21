@@ -3,8 +3,8 @@ var app = express();
 var AWS = require('aws-sdk');
 var bodyParser = require('body-parser');
 
-var AWS_ACCESS_KEY = 'AKIAIEF43TOE7YBZSYMQ';
-var AWS_SECRET_KEY = 'Rhwc9MrpXstigJr05tnVMuOUaqbp0hqC84W5zGB';
+var AWS_ACCESS_KEY = '***';
+var AWS_SECRET_KEY = '***';
 AWS.config.update({accessKeyId: AWS_ACCESS_KEY, secretAccessKey: AWS_SECRET_KEY});
 AWS.config.region = 'Oregon';
 
