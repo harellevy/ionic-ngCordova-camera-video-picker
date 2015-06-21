@@ -1,0 +1,27 @@
+<ion-view view-title="Upload">
+	<ion-content class="page-container" has-header="true" scroll="true">
+		<div class="list">
+			<div class="item">
+				<script type="text/javascript" src="//api.filepicker.io/v2/filepicker.js"></script>
+				<input class="button" type="filepicker" data-fp-apikey="A4g8hir8GTpSQFztmhrPBz" data-fp-mimetypes="video/*" data-fp-container="modal" data-fp-services="DROPBOX,GOOGLE_DRIVE,GMAIL,SKYDRIVE,VIDEO,FTP" onchange="alert(event.fpfile.url)">
+				<a class="button" ng-click="takeVideo()">upload video</a>
+				and<p>{{playingVideo}}</p>
+				<a class="tryvideo" ng-click="createVideoTag('.video',playingVideo)">try video, state: {{videoState}}</a>
+				<div class="video">
+				</div>
+			</div>
+			<label class="item item-input item-floating-label">
+				<span class="input-label">How to video title</span>
+				<input type="text" placeholder="How to tie a tie" prefix="how to..">
+			</label>
+			<label class="item item-input item-floating-label">
+				<span class="input-label"></span>
+				<input type="text" placeholder="Last Name">
+			</label>
+			<label class="item item-input item-floating-label">
+				<span class="input-label">Email</span>
+				<input type="text" placeholder="Email">
+			</label>
+		</div>
+	</ion-content>
+</ion-view>
